@@ -2,7 +2,7 @@ import React from 'react'
 import Bg from '../assets/intro.png'
 import './Css/Header.css'
 import Electrician from '../assets/Electrician.svg'
-import Assembly from '../assets/Assembly.svg'
+import Diabetes from '../assets/diabetes.svg'
 import Cleaning from '../assets/Cleaner.svg'
 import Cleaner from '../assets/Cleaner.svg'
 import Lifter from '../assets/Lifter.svg'
@@ -13,9 +13,9 @@ import Makeup from '../assets/Makeup.svg'
 import Pest from '../assets/Pest.svg'
 const HeaderSection = () => {
     const Data=[
-        {Image:Electrician,Title:'Electrician'},
-        {Image:Assembly,Title:'Assembly'},
-        {Image:Cleaning,Title:'Cleaning'},
+        {Image:Electrician,Title:'Heart-Care'},
+        {Image:Diabetes,Title:'Diabetes'},
+        {Image:Cleaning,Title:'Headache'},
         {Image:Cleaner,Title:'Cleaner'},
         {Image:Lifter,Title:'Lifter'},
         {Image:Painter,Title:'Painter'},
@@ -38,7 +38,7 @@ const HeaderSection = () => {
     </div>
     <div className='Header_Feature'>
         <div className='Header_Feature_Heading'>
-        You need it, we've got it
+        You might like
         </div>
         <span className='Sepration'></span>
         <div className='Header_Feature_Container'>

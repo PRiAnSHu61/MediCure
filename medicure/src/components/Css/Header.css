@@ -12,6 +12,7 @@
   left: 0;
   opacity: 50%;
 }
+
 .HeaderContainer .Header_text {
     font-size: 3.5rem;
     color: #1c2751;
@@ -21,10 +22,10 @@
     right: 0;
     top: -10;
     text-align: start;
-    /* backdrop-filter: blur(3px) brightness(0.7); */
-    /* background: #ffffff;
+    backdrop-filter: blur(3px) brightness(0.7); 
+     background: #ffffff;
     background-clip:text ;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent; 
     color: #000000;
     text-shadow: #1c2751;
     width: 100vw;

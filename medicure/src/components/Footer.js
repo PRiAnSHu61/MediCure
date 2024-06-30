@@ -20,7 +20,7 @@ const Footer = () => {
             <div className='Heading'>Company</div>
             <div className='Links'>
                 <div className='Link'>About Us</div>
-                <div className='Link'>Careers</div>
+                <div className='Link'>Terms & Conditions</div>
                 <div className='Link'>Privacy Policy</div>
             </div>
         </div>
