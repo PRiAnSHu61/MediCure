@@ -5,7 +5,7 @@
     margin-top: 20px;
 }
 .Work_Section .Work_Section_Container{
-    background: #1C2751;
+    background: #004d00;
     padding: 20px;
     border-radius: 20px;
     width: 18rem;
@@ -43,7 +43,7 @@
 }
 .Work_Section .Work_Section_Container .Work_text .Work_Section_Container_Text .Number{
     font-size: 1rem;
-    color: #1C2751;
+    color: #004d00;
     padding: 10px;
     height: 20px;
     width: 20px;
@@ -66,7 +66,7 @@
 }
 .Get_Help_Container .Get_Help_Heading{
     font-size: 2rem;
-    color: #1C2751;
+    color: #004d00;
     text-align: start;
     /* margin-bottom: 1rem; */
     font-weight: 700;
@@ -84,7 +84,7 @@
     font-size: 0.9rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    background: #1C2751;
+    background: #004d00;
     color: #fff;
     border-radius: 2rem;
     width: fit-content;
@@ -93,7 +93,7 @@
 .SeeAll{
     font-size: 1rem;
     font-weight: 400;
-    color: #1C2751;
+    color: #004d00;
     text-align: start;
     margin-top: 20px;
 }

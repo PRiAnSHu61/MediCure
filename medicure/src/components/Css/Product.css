@@ -7,7 +7,7 @@
     font-size: 2rem;
     font-weight: 300;
     color: #fff;
-    background: #1C2751;
+    background: #004d00;
     border-radius: 10px;
     width: 2.5rem;
     height: 2.5rem;
@@ -33,7 +33,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
-    background: #1C2751;
+    background: #004d00;
     width: 10vw;
     padding: 10px 30px;
     border-radius: 20px;
@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    color: #1C2751;
+    color: #004d00;
     font-weight: 600;
 }
 .ChatBtn{
@@ -83,13 +83,13 @@
 .Product_Description .Section3 .Description{
     font-size: 1.5rem;
     text-align: start;
-    color: #1C2751;
+    color: #004d00;
     font-weight: 600;
 }
 .Product_Description .Section3 .ExplainedDescription{
     font-size: 0.8rem;
     text-align: start;
-    color: #1C2751;
+    color: #004d00;
     line-height: 1.25rem;
     font-weight: 400;
 }

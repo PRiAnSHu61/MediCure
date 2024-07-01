@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    border: solid 2px #004d00;
 }
 .Login_Modal .Login_Left_Section{
     width: 50%;
@@ -19,7 +20,7 @@
 }
 .Login_Modal .Login_Left_Section span{
     font-weight: 700;
-    color: #1C2751;
+    color: #004d00;
     font-size: 2rem;
 }
 .Login_Modal .Login_Right_Section{
@@ -29,7 +30,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #1C2751;
+    background: #004d00;
     position: relative;
 }
 .Login_Modal .Login_Right_Section .Heading{
@@ -53,7 +54,7 @@
 }
 .Login_Modal .Login_Right_Section .LoginUsing .Phone span,
 .Login_Modal .Login_Right_Section .LoginUsing .Google span{
-    color: #1C2751;
+    color: #004d00;
     font-size: 1rem;
     font-weight: 500;
     font-family: "Inter", sans-serif;

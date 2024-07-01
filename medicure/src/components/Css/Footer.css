@@ -9,7 +9,7 @@
     font-size: 2rem;
     text-decoration: underline;
     font-weight: 700;
-    color: #1C2751;
+    color: #004d00;
     margin: 20px 0;
 }
 .DiscoverSection,.CompanySection{
@@ -40,7 +40,7 @@
 .SocialSection .TagLine{
     font-size: 2rem;
     font-weight: 700;
-    color: #1C2751;
+    color: #004d00;
     margin: 10px 0;
 }
 .SocialLinks{
@@ -50,7 +50,7 @@
     align-items: center;
 }
 .SocialLink{
-    border-right: 1px solid #1C2751;
+    border-right: 1px solid #004d00;
     padding: 0 20px;
     height: 20px;
     display: flex;

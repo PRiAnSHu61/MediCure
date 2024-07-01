@@ -3,7 +3,7 @@
 .Recomendation_Section .Recommendation_Section_Heading {
     font-size: 2.5rem;
     font-weight: 400;
-    color: #1C2751;
+    color: #004d00;
     margin-bottom: 1.5rem;
     text-align: start;
     font-family: "Inria Sans", sans-serif;
@@ -56,11 +56,11 @@
 }
 
 .Recomendation_Section .Recommendation_Section_Container .Recommendation_Card .Recommendation_Card_Description .Job_Location span {
-    color: #1C2751;
+    color: #004d00;
 }
 
 .Recomendation_Section .Recommendation_Section_Container .Recommendation_Card .Add_To_Cart_Button {
-    background-color: #1C2751;
+    background-color: #004d00;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -72,7 +72,7 @@
 }
 
 .Recomendation_Section .Recommendation_Section_Container .Recommendation_Card .Add_To_Cart_Button:hover {
-    background-color: #1C2751;
+    background-color: #004d00;
 }
 
 .Recomendation_Section .Recommendation_Section_Container .Recommendation_Card .Quantity_Selector {
@@ -85,7 +85,7 @@
 }
 
 .Recomendation_Section .Recommendation_Section_Container .Recommendation_Card .Quantity_Button {
-    background-color: #1C2751;
+    background-color: #004d00;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -96,17 +96,17 @@
 }
 
 .Recomendation_Section .Recommendation_Section_Container .Recommendation_Card .Quantity_Button:hover {
-    background-color: #1C2751;
+    background-color: #004d00;
 }
 
 .Recomendation_Section .Recommendation_Section_Container .Recommendation_Card .Quantity {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1C2751;
+    color: #004d00;
 }
 
 .Recommendation_Section_ViewAll {
-    border: 2px solid #1C2751;
+    border: 2px solid #004d00;
     border-radius: 2rem;
     padding: 5px 20px;
     width: 8rem;

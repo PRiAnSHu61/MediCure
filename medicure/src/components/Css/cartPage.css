@@ -10,14 +10,14 @@
 .cart-page h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #1C2751;
+  color: #004d00;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .cart-page p {
   font-size: 1rem;
-  color: #1C2751;
+  color: #004d00;
   text-align: center;
   margin-top: 20px;
 }
@@ -56,7 +56,7 @@
 
 .cart-page .Quantity {
   font-weight: 600;
-  color: #1C2751;
+  color: #004d00;
   margin-left: 10px;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .cart-page .Quantity_Selector button {
-  background: #1C2751;
+  background: #004d00;
   border: none;
   color: #fff;
   font-size: 1.25rem;
@@ -83,7 +83,7 @@
 .cart-page .Total {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1C2751;
+  color: #004d00;
   text-align: right;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -91,7 +91,7 @@
 
 .cart-page .Checkout_Button {
   display: block;
-  background: #1C2751;
+  background: #004d00;
   color: #fff;
   padding: 15px 30px;
   border: none;

@@ -1,9 +1,9 @@
 import React from 'react'
-import Bg from '../assets/intro.png'
+import Bg from '../assets/intro.jpg'
 import './Css/Header.css'
-import Electrician from '../assets/Electrician.svg'
+import HeartCare from '../assets/heartcare.svg'
 import Diabetes from '../assets/diabetes.svg'
-import Cleaning from '../assets/Cleaner.svg'
+import Headache from '../assets/headache.svg'
 import Cleaner from '../assets/Cleaner.svg'
 import Lifter from '../assets/Lifter.svg'
 import Painter from '../assets/Paint.svg'
@@ -13,9 +13,9 @@ import Makeup from '../assets/Makeup.svg'
 import Pest from '../assets/Pest.svg'
 const HeaderSection = () => {
     const Data=[
-        {Image:Electrician,Title:'Heart-Care'},
+        {Image:HeartCare,Title:'Heart-Care'},
         {Image:Diabetes,Title:'Diabetes'},
-        {Image:Cleaning,Title:'Headache'},
+        {Image:Headache,Title:'Headache'},
         {Image:Cleaner,Title:'Cleaner'},
         {Image:Lifter,Title:'Lifter'},
         {Image:Painter,Title:'Painter'},
