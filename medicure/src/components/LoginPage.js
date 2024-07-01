@@ -8,7 +8,7 @@ import Phone from '../assets/Phone.svg'
 import './Css/Login.css'
 import { doSignInWithGoogle } from '../auth'
 import { useAuth } from '../context/authContext'
-import { Navigate } from 'react-router-dom'
+// import { Navigate } from 'react-router-dom'
 const LoginPage = () => {
     const [signup, setSignup] = useState(false);
     useAuth()
@@ -72,7 +72,7 @@ const LoginPage = () => {
         <>
             <div className='Login_Left_Section'>
             <img src={Logo} alt='Logo'/>
-            <span>Medicure-You need it <br/> we've got it</span>
+            <span>MediCure- You need it <br/> We've got it</span>
         </div>
         <div className='Login_Right_Section'>
             <div className='Heading'> Welcome Back!</div>

@@ -1,7 +1,8 @@
 .Product_Description{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: relative;
+    margin-top: 10px;
 }
 .Product_Description .Close{
     font-size: 2rem;
