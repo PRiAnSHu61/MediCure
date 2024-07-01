@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import axios from 'axios';
 import Navbar from './Navbar';
 import './Css/cartPage.css';
 import { CartContext } from '../context/cartContext';
@@ -10,14 +11,39 @@ const CartPage = () => {
     console.log('Cart Items:', cartItems); // Debugging line
   }, [cartItems]);
 
-  const handleBuyNow = () => {
-    alert('Order placed!');
-    clearCart();
+  const handleBuyNow = async () => {
+    try {
+      const total = cartItems.reduce((total, item) => {
+        const itemPrice = parseFloat(item.price.replace('$', '')); // Remove $ sign and parse as float
+        return total + itemPrice * item.quantity;
+      }, 0);
+  
+      const orderData = {
+        items: cartItems.map(item => ({
+          name: item.name,
+          price: parseFloat(item.price.replace('$', '')), // Ensure price is parsed as a number
+          quantity: item.quantity,
+          description: item.description
+        })),
+        total: total.toFixed(2),
+      };
+    
+      console.log('Order Data:', orderData); // Debugging line
+
+      const response = await axios.post('http://localhost:4001/createOrder', orderData);
+
+      console.log('Order created:', response.data);
+      alert('Order placed successfully!');
+      clearCart();
+    } catch (error) {
+      console.error('Error creating order:', error.response ? error.response.data : error.message);
+      alert('Failed to place order');
+    }
   };
 
   // Calculate the total price
   const totalPrice = cartItems.reduce((total, item) => {
-    const itemPrice = parseFloat(item.price.replace('$', '')); // Remove $ sign and parse as float
+    const itemPrice = parseFloat(item.price.replace(/[^0-9.-]+/g, "")); // Remove currency symbols
     return total + itemPrice * item.quantity;
   }, 0);
 
@@ -48,7 +74,8 @@ const CartPage = () => {
             <button className="Clear_Cart_Button" onClick={clearCart}>
               Clear Cart
             </button>
-            <button className="Buy_Now_Button" onClick={handleBuyNow}>Buy Now
+            <button className="Buy_Now_Button" onClick={handleBuyNow}>
+              Buy Now
             </button>
           </>
         )}

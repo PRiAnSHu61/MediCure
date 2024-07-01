@@ -1,59 +1,59 @@
-// Import the express module
 const express = require('express');
-var cors = require('cors');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const ProductModel = require('./models/products'); // Import ProductModel
+const OrderModel = require('./models/order'); // Import OrderModel
 
-// Create an instance of an Express app
 const app = express();
+const port = 4001;
 
-// Define a port number
-const port = 4000;
+app.use(express.static('public'));
 app.use(cors());
+app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://prianshusharma993:cQ8rWPQ1kqmBgQep@medicure.gp2lbji.mongodb.net/?retryWrites=true&w=majority&appName=medicure')
-  .then(() => console.log('Connected!'));
-
-
-// var mysql      = require('mysql');
-// var connection = mysql.createConnection({
-//     host     : '127.0.0.1',
-//     port     : '5000',
-//     user     : 'medicure',
-//     password : 'medicure@1234',
-//     database: 'sys'
-// });
- 
-// connection.connect(function(err) {
-//     if (err) {
-//     console.error('error connecting: ' + err.stack);
-//     return;
-// }
- 
-// console.log('connected as id ' + connection.threadId);
-// });
-
-// Define a route for the root URL
-app.post('/', async (req, res) => {
-    const { quantity, description, expiryDate, productName } = req.body;
-    const randomProduct = new Product({
-        quantity,
-        description,
-        expiryDate,
-        productName
-      });
-    
-      try {
-        const result = await randomProduct.save();
-        res.status(201).json({ message: 'Product data inserted', result });
-      } catch (error) {
-        res.status(500).json({ message: 'Error inserting data', error });
-      }
+// Connect to MongoDB
+mongoose.connect('mongodb+srv://prianshusharma993:cQ8rWPQ1kqmBgQep@medicure.gp2lbji.mongodb.net/medicure?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
 });
-app.get('/', (req, res) => {
-  res.send('Hello, world from get!');
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.once('open', () => console.log('Connected to MongoDB'));
+
+// Route to handle adding product to cart
+app.post('/addToCart', async (req, res) => {
+    const { price, quantity, description } = req.body;
+    const newProduct = new ProductModel({ price, quantity, description });
+
+    try {
+        const savedProduct = await newProduct.save();
+        res.status(201).json(savedProduct);
+    } catch (error) {
+        console.error('Error adding product to cart:', error);
+        res.status(500).json({ error: 'Failed to add product to cart' });
+    }
 });
 
-// Start the server and listen on the defined port
+// Route to handle creating a new order
+app.post('/createOrder', async (req, res) => {
+    const { items, total } = req.body;
+
+    console.log('Received Order Data:', req.body); // Debugging line
+
+    const newOrder = new OrderModel({ items, total });
+
+    try {
+        const savedOrder = await newOrder.save();
+        res.status(201).json(savedOrder);
+    } catch (error) {
+        console.error('Error creating order:', error.message);
+        console.error(error.stack);
+        res.status(500).json({ error: 'Failed to create order', details: error.message });
+    }
+});
+
+// Start the server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on http://localhost:${port}`);
 });
