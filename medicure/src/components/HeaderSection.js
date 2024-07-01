@@ -2,34 +2,36 @@ import React from 'react'
 import Bg from '../assets/intro.jpg'
 import './Css/Header.css'
 import HeartCare from '../assets/heartcare.svg'
-import Diabetes from '../assets/diabetes.svg'
-import Headache from '../assets/headache.svg'
-import Cleaner from '../assets/Cleaner.svg'
-import Lifter from '../assets/Lifter.svg'
-import Painter from '../assets/Paint.svg'
-import Plumber from '../assets/Plumber.svg'
-import Technician from '../assets/Tech.svg'
-import Makeup from '../assets/Makeup.svg'
-import Pest from '../assets/Pest.svg'
+import Allergy from '../assets/allergy.svg'
+import Children from '../assets/children.svg'
+import flu from '../assets/flu.svg'
+import digestion from '../assets/digestion.svg'
+import Pain from '../assets/pain.svg'
+import pills from '../assets/pills.svg'
+import Prescription from '../assets/prescription.svg'
+import Skincare from '../assets/skincare.svg'
+import Women from '../assets/women.svg'
 const HeaderSection = () => {
     const Data=[
         {Image:HeartCare,Title:'Heart-Care'},
-        {Image:Diabetes,Title:'Diabetes'},
-        {Image:Headache,Title:'Headache'},
-        {Image:Cleaner,Title:'Cleaner'},
-        {Image:Lifter,Title:'Lifter'},
-        {Image:Painter,Title:'Painter'},
-        {Image:Plumber,Title:'Plumber'},
-        {Image:Technician,Title:'Technician'},
-        {Image:Makeup,Title:'Makeup'},
-        {Image:Pest,Title:'Pest'},
+        {Image:Allergy,Title:'Allergy'},
+        {Image:Children,Title:'Child-Care'},
+        {Image:flu,Title:'Flu'},
+        {Image:digestion,Title:'Digestion'},
+        {Image:Pain,Title:'Body-Pain'},
+        {Image:pills,Title:'VItamin-Pills'},
+        {Image:Prescription,Title:'Prescriptions'},
+        {Image:Skincare,Title:'Skincare'},
+        {Image:Women,Title:'Women-Essentials'},
     ]
   return (
     <>
     <div className='HeaderContainer'>
         <span className='Header_text'>
             <span>
-            MediCure - You need it, we've got it
+            MediCure - Healthcare
+            <br></br> 
+            at you doorstep
             </span>
         </span>
         <span className='background_header'>

@@ -1,16 +1,16 @@
 .HeaderContainer {
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
   position: relative;
 }
 .HeaderContainer .background_header img {
-  height: 100%;
+  height: 40vh;
   width: 100vw;
   object-fit: cover;
   position: absolute;
   left: 0;
-  opacity: 80%;
+  opacity: 70%;
   margin-top: 10px;
 }
 
@@ -24,17 +24,17 @@
     top: -10;
     text-align: start;
     backdrop-filter: blur(3px) brightness(0.7); 
-     background: #ffffff;
+    background: #004d00;
     background-clip:text ;
     -webkit-text-fill-color: transparent; 
-    color: #000000;
-    text-shadow: #000000;
+    color: #004d00;
+    text-shadow: #004d00;
     width: 100vw;
     height: 100%;
     font-weight: 800;
     height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 .HeaderContainer .Header_text span{
     margin-top: 5rem;
@@ -43,7 +43,7 @@
 
 .Header_Feature .Header_Feature_Heading{
     font-size: 2rem;
-    color: #000000;
+    color: #004d00;
     font-weight: 800;
     text-align: center;
     margin: 2rem 0;
@@ -75,7 +75,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: #000000;
+    color: #004d00;
 }
 .MoreCateg{
     text-align: end;
